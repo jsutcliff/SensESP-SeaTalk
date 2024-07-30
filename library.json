@@ -1,5 +1,5 @@
 {
-    "name": "NMEA0183",
+    "name": "SensESP-SeaTalk",
     "keywords": "NMEA, NMEA 0183, GNSS, GPS, GLONASS, Galileo, Beidou, SensESP, Signal K, marine, boat, sensor",
     "description": "NMEA 0183 input parser for the SensESP framework",
     "repository": {
