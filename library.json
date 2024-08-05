@@ -19,6 +19,11 @@
             "name": "SensESP",
             "owner": "SignalK",
             "version": "^2.1.1"
+        },
+        {
+            "name": "EspSoftwareSerial",
+            "owner": "plerup",
+            "version": "^8.2.0"
         }
     ],
     "version": "0.0.1",

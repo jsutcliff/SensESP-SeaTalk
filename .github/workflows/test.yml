@@ -1,4 +1,4 @@
-name: SensESP/NMEA0183 Automatic Build
+name: SensESP/SeaTalk Automatic Build
 
 on: [push, pull_request]
 
@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         example:
-          - examples/gnss_receiver.cpp
+          - examples/seatalk_receiver.cpp
         target_device:
           - esp32dev
     steps:
