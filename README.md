@@ -1,4 +1,4 @@
-# NMEA 0183 Data Input Sensor for SensESP
+# SeaTalk 1 Data Input Sensor for SensESP
 
 This repository implements a NMEA 0183 parser library for [SensESP](https://signalk.org/SignalK/SensESP/).
 It reads and parses NMEA 0183 formatted data and creates  SensESP Producers for the different data.

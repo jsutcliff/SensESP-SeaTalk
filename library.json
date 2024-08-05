@@ -1,16 +1,16 @@
 {
     "name": "SensESP-SeaTalk",
-    "keywords": "NMEA, NMEA 0183, GNSS, GPS, GLONASS, Galileo, Beidou, SensESP, Signal K, marine, boat, sensor",
-    "description": "NMEA 0183 input parser for the SensESP framework",
+    "keywords": "SeaTalk, Raymarine, SensESP, Signal K, marine, boat, sensor",
+    "description": "SeaTalk 1 input parser for the SensESP framework",
     "repository": {
         "type": "git",
-        "url": "https://github.com/SensESP/NMEA0183.git"
+        "url": "https://github.com/jsutcliff/SensESP-SeaTalk.git"
     },
     "authors": [
         {
-            "name": "Matti Airas",
-            "email": "mairas@iki.fi",
-            "url": "https://github.com/mairas/",
+            "name": "Justin Sutcliff",
+            "email": "justins210@gmail.com",
+            "url": "https://justinsutcliff.com/",
             "maintainer": true
         }
     ],
@@ -21,7 +21,7 @@
             "version": "^2.1.1"
         }
     ],
-    "version": "2.0.1",
+    "version": "0.0.1",
     "frameworks": "arduino",
     "platforms": "*"
 }
