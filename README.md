@@ -1,18 +1,14 @@
-# SeaTalk 1 Data Input Sensor for SensESP
+# SeaTalk 1 Data Input for SensESP
 
-This repository implements a NMEA 0183 parser library for [SensESP](https://signalk.org/SignalK/SensESP/).
-It reads and parses NMEA 0183 formatted data and creates  SensESP Producers for the different data.
-
-The default parsers support common GNSS (GPS, Galileo, GLONASS) receiver sentences, but creating custom sentence parsers is also supported.
-
-A convenience function for connecting the built-in providers to Signal K output is also included.
+This repository implements a SeaTalk 1 parser library for [SensESP](https://signalk.org/SignalK/SensESP/).
+It is loosely based on the [NMEA183](https://github.com/SensESP/NMEA0183) library, the [APRemote](https://github.com/richardJG/APRemote) project, and the information provided by [Thomas Knauf](http://www.thomasknauf.de/rap/seatalk2.htm).
 
 To use the library in your own projects, you have to include it in your `platformio.ini` `lib_deps` section:
 
     lib_deps =
         SignalK/SensESP@^2.1.1
-        SensESP/NMEA0183@^2.0.0
+        jsutcliff/SensESP-SeaTalk@^0.0.1
 
-See also the [example main file](blob/main/examples/gnss_receiver.cpp).
+See also the [example main file](blob/main/examples/seatalk_receiver.cpp).
 
 For more information on using SensESP and external add-on libraries, see the [SensESP documentation](https://signalk.org/SensESP/docs/).
