@@ -8,6 +8,10 @@ SeaTalkParser::SeaTalkParser() {
   add_msg(new SeaTalkSpeedThroughWater());
   add_msg(new SeaTalkApparentWindSpeed());
   add_msg(new SeaTalkApparentWindAngle());
+  add_msg(new SeaTalkWaterTemperature());
+  add_msg(new SeaTalkPosition());
+  add_msg(new SeaTalkSpeedOverGround());
+  add_msg(new SeaTalkAutopilotStuff());
 }
 
 void SeaTalkParser::add_msg(SeaTalkMessage *msg) {
@@ -58,7 +62,7 @@ void SeaTalkParser::handle(char c, bool parity) {
       working = true;
 
       for (auto msg : msgs_) {
-        msg->update(stBuff);
+        msg->parse(stBuff);
       }
 
       //       switch (stBuff[0]) {

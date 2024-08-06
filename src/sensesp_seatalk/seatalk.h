@@ -9,19 +9,19 @@
 namespace sensesp {
 
 /**
- * @brief Support for a GPS module communicating with NMEA 0183
- * messages over a serial interface.
+ * @brief Support for communicating with SeaTalk
+ * instruments over a serial interface.
  *
- * @param rx_stream Pointer to the Stream of incoming GPS data over
- * a serial connection.
+ * @param rx_pin ESP32 pin for receiving SeaTalk data
  **/
 class SeaTalkInput : public Startable {
 public:
-  SeaTalkInput(uint8_t rx_pin);
+  SeaTalkInput(uint8_t rx_pin, bool invert=false);
   virtual void start() override final;
 
 private:
   uint8_t rx_pin_;
+  bool invert_;
   SoftwareSerial *rx_stream_;
   SeaTalkParser seatalk_parser_;
 };
