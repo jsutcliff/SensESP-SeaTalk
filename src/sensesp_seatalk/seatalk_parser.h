@@ -25,18 +25,14 @@ class SeaTalkParser {
 public:
   SeaTalkParser();
   void add_msg(SeaTalkMessage *msg);
-  void handle(char c, bool parity);
+  void handle(uint8_t c, bool parity);
 
 private:
   std::vector<SeaTalkMessage *> msgs_;
 
-  bool bCmd = false;    // set true if command found
   uint8_t bufCount = 0; // counter for no of bytes received
   uint8_t cmdCount;     // number of bytes in command
-  uint16_t b;
-  uint8_t stBuff[MAX_BUF_SIZE];
-  char b1[15];
-  bool working = false;
+  uint8_t buf[MAX_BUF_SIZE];
 };
 
 } // namespace sensesp

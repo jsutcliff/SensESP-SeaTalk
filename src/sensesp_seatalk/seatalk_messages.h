@@ -18,6 +18,7 @@ public:
   void parse(uint8_t *buf) {
     for (auto pair : parsers_) {
       if (pair.first == buf[0]) {
+        debugD("Found parser for: %04x", pair.first);
         pair.second(buf);
       }
     }
